@@ -1,0 +1,20 @@
+
+#ic ice verilen listeleri tek bir liste olarak cikti veren fonksiyon
+
+
+FlattenList=[]
+
+def getItemsFromList(xList):
+    if type(xList) is not list:
+        FlattenList.append(xList)
+    else:
+      for item in xList:
+          if type(xList) is not list:
+              FlattenList.append(item)
+          else:
+              getItemsFromList(item)
+
+def flattenfunc(xList):
+    getItemsFromList(xList)
+    print(FlattenList)
+
