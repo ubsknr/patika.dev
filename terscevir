@@ -1,0 +1,9 @@
+#Verilen listenin elemanlarını tersten yazdırır ve yeni listeye ekler
+
+yeni_liste=[]
+def tersecevir (xList):
+    x=reversed(xList)
+    for i in x:
+        i.reverse()
+        yeni_liste.append(i)
+    print(yeni_liste)
